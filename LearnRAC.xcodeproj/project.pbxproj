@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073C704A11481AADC088F49B /* libPods-LearnRAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E00D710558B86AB287383F /* libPods-LearnRAC.a */; };
 		D4B2AF2E20EDFB290055B501 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF2D20EDFB290055B501 /* AppDelegate.m */; };
 		D4B2AF3120EDFB2A0055B501 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF3020EDFB2A0055B501 /* ViewController.m */; };
 		D4B2AF3420EDFB2A0055B501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B2AF3220EDFB2A0055B501 /* Main.storyboard */; };
 		D4B2AF3620EDFB2C0055B501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B2AF3520EDFB2C0055B501 /* Assets.xcassets */; };
 		D4B2AF3920EDFB2C0055B501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B2AF3720EDFB2C0055B501 /* LaunchScreen.storyboard */; };
 		D4B2AF3C20EDFB2C0055B501 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF3B20EDFB2C0055B501 /* main.m */; };
+		D4B2AF4520EDFB9C0055B501 /* BaseTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF4420EDFB9C0055B501 /* BaseTableViewVC.m */; };
+		D4B2AF4920EDFEE60055B501 /* KVOVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF4820EDFEE60055B501 /* KVOVC.m */; };
+		D4B2AF4C20EE15FC0055B501 /* DelegateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF4B20EE15FC0055B501 /* DelegateVC.m */; };
+		D4B2AF4F20EE293A0055B501 /* EventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF4E20EE293A0055B501 /* EventVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21262561EA576CF54B609D88 /* Pods-LearnRAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRAC.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRAC/Pods-LearnRAC.release.xcconfig"; sourceTree = "<group>"; };
+		31E00D710558B86AB287383F /* libPods-LearnRAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearnRAC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		937910A95003093F4F7BABAA /* Pods-LearnRAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRAC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRAC/Pods-LearnRAC.debug.xcconfig"; sourceTree = "<group>"; };
 		D4B2AF2920EDFB290055B501 /* LearnRAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B2AF2C20EDFB290055B501 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4B2AF2D20EDFB290055B501 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +34,14 @@
 		D4B2AF3820EDFB2C0055B501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4B2AF3A20EDFB2C0055B501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4B2AF3B20EDFB2C0055B501 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4B2AF4320EDFB9C0055B501 /* BaseTableViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewVC.h; sourceTree = "<group>"; };
+		D4B2AF4420EDFB9C0055B501 /* BaseTableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewVC.m; sourceTree = "<group>"; };
+		D4B2AF4720EDFEE60055B501 /* KVOVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOVC.h; sourceTree = "<group>"; };
+		D4B2AF4820EDFEE60055B501 /* KVOVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOVC.m; sourceTree = "<group>"; };
+		D4B2AF4A20EE15FC0055B501 /* DelegateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegateVC.h; sourceTree = "<group>"; };
+		D4B2AF4B20EE15FC0055B501 /* DelegateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateVC.m; sourceTree = "<group>"; };
+		D4B2AF4D20EE293A0055B501 /* EventVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventVC.h; sourceTree = "<group>"; };
+		D4B2AF4E20EE293A0055B501 /* EventVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +49,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073C704A11481AADC088F49B /* libPods-LearnRAC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26948C80B824FB56C3BB4927 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31E00D710558B86AB287383F /* libPods-LearnRAC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4B2AF2020EDFB290055B501 = {
 			isa = PBXGroup;
 			children = (
+				D4B2AF4620EDFECA0055B501 /* RAC */,
+				D4B2AF4220EDFB7A0055B501 /* Base */,
 				D4B2AF2B20EDFB290055B501 /* LearnRAC */,
 				D4B2AF2A20EDFB290055B501 /* Products */,
+				E15C9CA5C0CFFC58C06CC6BC /* Pods */,
+				26948C80B824FB56C3BB4927 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +100,37 @@
 			path = LearnRAC;
 			sourceTree = "<group>";
 		};
+		D4B2AF4220EDFB7A0055B501 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2AF4320EDFB9C0055B501 /* BaseTableViewVC.h */,
+				D4B2AF4420EDFB9C0055B501 /* BaseTableViewVC.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D4B2AF4620EDFECA0055B501 /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2AF4720EDFEE60055B501 /* KVOVC.h */,
+				D4B2AF4820EDFEE60055B501 /* KVOVC.m */,
+				D4B2AF4A20EE15FC0055B501 /* DelegateVC.h */,
+				D4B2AF4B20EE15FC0055B501 /* DelegateVC.m */,
+				D4B2AF4D20EE293A0055B501 /* EventVC.h */,
+				D4B2AF4E20EE293A0055B501 /* EventVC.m */,
+			);
+			path = RAC;
+			sourceTree = "<group>";
+		};
+		E15C9CA5C0CFFC58C06CC6BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				937910A95003093F4F7BABAA /* Pods-LearnRAC.debug.xcconfig */,
+				21262561EA576CF54B609D88 /* Pods-LearnRAC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4B2AF3F20EDFB2C0055B501 /* Build configuration list for PBXNativeTarget "LearnRAC" */;
 			buildPhases = (
+				B96A59DEB9A94E5DE4CF2A1E /* [CP] Check Pods Manifest.lock */,
 				D4B2AF2520EDFB290055B501 /* Sources */,
 				D4B2AF2620EDFB290055B501 /* Frameworks */,
 				D4B2AF2720EDFB290055B501 /* Resources */,
@@ -136,14 +197,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B96A59DEB9A94E5DE4CF2A1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnRAC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D4B2AF2520EDFB290055B501 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B2AF4F20EE293A0055B501 /* EventVC.m in Sources */,
 				D4B2AF3120EDFB2A0055B501 /* ViewController.m in Sources */,
+				D4B2AF4C20EE15FC0055B501 /* DelegateVC.m in Sources */,
 				D4B2AF3C20EDFB2C0055B501 /* main.m in Sources */,
+				D4B2AF4920EDFEE60055B501 /* KVOVC.m in Sources */,
 				D4B2AF2E20EDFB290055B501 /* AppDelegate.m in Sources */,
+				D4B2AF4520EDFB9C0055B501 /* BaseTableViewVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +367,7 @@
 		};
 		D4B2AF4020EDFB2C0055B501 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 937910A95003093F4F7BABAA /* Pods-LearnRAC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +384,7 @@
 		};
 		D4B2AF4120EDFB2C0055B501 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21262561EA576CF54B609D88 /* Pods-LearnRAC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
