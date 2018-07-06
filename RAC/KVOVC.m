@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additbional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
     
     self.dataSources = @[@{ @"type" : @"UIViewController", @"className" : @"UIViewController", @"desc" : @"空白的ViewController"}];
 

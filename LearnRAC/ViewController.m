@@ -20,7 +20,10 @@
     
     self.dataSources = @[@{ @"type" : @"UIViewController", @"className" : @"KVOVC", @"desc" : @"rac实现kvo"},
                          @{ @"type" : @"UIViewController", @"className" : @"DelegateVC", @"desc" : @"rac实现deleagte"},
-                         @{ @"type" : @"UIViewController", @"className" : @"EventVC", @"desc" : @"rac实现事件监听"}];
+                         @{ @"type" : @"UIViewController", @"className" : @"EventVC", @"desc" : @"rac实现事件监听"},
+                         @{ @"type" : @"UIViewController", @"className" : @"SignalVC", @"desc" : @"rac信号"},
+                         @{ @"type" : @"UIViewController", @"className" : @"TimerVC", @"desc" : @"rac实现timer"},
+                         @{ @"type" : @"UIViewController", @"className" : @"SignalActionVC", @"desc" : @"信号操作"}];
 }
 
 

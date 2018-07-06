@@ -18,6 +18,9 @@
 		D4B2AF4920EDFEE60055B501 /* KVOVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF4820EDFEE60055B501 /* KVOVC.m */; };
 		D4B2AF4C20EE15FC0055B501 /* DelegateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF4B20EE15FC0055B501 /* DelegateVC.m */; };
 		D4B2AF4F20EE293A0055B501 /* EventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF4E20EE293A0055B501 /* EventVC.m */; };
+		D4B2AF5220EF094A0055B501 /* SignalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF5120EF094A0055B501 /* SignalVC.m */; };
+		D4B2AF5520EF50570055B501 /* TimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF5420EF50570055B501 /* TimerVC.m */; };
+		D4B2AF5820EF54820055B501 /* SignalActionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF5720EF54820055B501 /* SignalActionVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,12 @@
 		D4B2AF4B20EE15FC0055B501 /* DelegateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateVC.m; sourceTree = "<group>"; };
 		D4B2AF4D20EE293A0055B501 /* EventVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventVC.h; sourceTree = "<group>"; };
 		D4B2AF4E20EE293A0055B501 /* EventVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventVC.m; sourceTree = "<group>"; };
+		D4B2AF5020EF094A0055B501 /* SignalVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalVC.h; sourceTree = "<group>"; };
+		D4B2AF5120EF094A0055B501 /* SignalVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignalVC.m; sourceTree = "<group>"; };
+		D4B2AF5320EF50570055B501 /* TimerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerVC.h; sourceTree = "<group>"; };
+		D4B2AF5420EF50570055B501 /* TimerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerVC.m; sourceTree = "<group>"; };
+		D4B2AF5620EF54820055B501 /* SignalActionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalActionVC.h; sourceTree = "<group>"; };
+		D4B2AF5720EF54820055B501 /* SignalActionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignalActionVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +127,12 @@
 				D4B2AF4B20EE15FC0055B501 /* DelegateVC.m */,
 				D4B2AF4D20EE293A0055B501 /* EventVC.h */,
 				D4B2AF4E20EE293A0055B501 /* EventVC.m */,
+				D4B2AF5020EF094A0055B501 /* SignalVC.h */,
+				D4B2AF5120EF094A0055B501 /* SignalVC.m */,
+				D4B2AF5320EF50570055B501 /* TimerVC.h */,
+				D4B2AF5420EF50570055B501 /* TimerVC.m */,
+				D4B2AF5620EF54820055B501 /* SignalActionVC.h */,
+				D4B2AF5720EF54820055B501 /* SignalActionVC.m */,
 			);
 			path = RAC;
 			sourceTree = "<group>";
@@ -223,11 +238,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B2AF5820EF54820055B501 /* SignalActionVC.m in Sources */,
 				D4B2AF4F20EE293A0055B501 /* EventVC.m in Sources */,
 				D4B2AF3120EDFB2A0055B501 /* ViewController.m in Sources */,
 				D4B2AF4C20EE15FC0055B501 /* DelegateVC.m in Sources */,
 				D4B2AF3C20EDFB2C0055B501 /* main.m in Sources */,
+				D4B2AF5220EF094A0055B501 /* SignalVC.m in Sources */,
 				D4B2AF4920EDFEE60055B501 /* KVOVC.m in Sources */,
+				D4B2AF5520EF50570055B501 /* TimerVC.m in Sources */,
 				D4B2AF2E20EDFB290055B501 /* AppDelegate.m in Sources */,
 				D4B2AF4520EDFB9C0055B501 /* BaseTableViewVC.m in Sources */,
 			);
