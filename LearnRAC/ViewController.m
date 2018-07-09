@@ -24,7 +24,7 @@
                          @{ @"type" : @"UIViewController", @"className" : @"SignalVC", @"desc" : @"rac信号"},
                          @{ @"type" : @"UIViewController", @"className" : @"TimerVC", @"desc" : @"rac实现timer"},
                          @{ @"type" : @"UIViewController", @"className" : @"SignalActionVC", @"desc" : @"信号操作"},
-                         @{ @"type" : @"UIViewController", @"className" : @"PersonInfoVC", @"desc" : @"双向绑定"}];
+                         @{ @"type" : @"UIViewController", @"className" : @"PersonInfoVC", @"desc" : @"数据绑定"}];
 }
 
 

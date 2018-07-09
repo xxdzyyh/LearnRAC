@@ -28,10 +28,18 @@
     self.person.name = @"nameone";
     self.person.age = 18;
 
-    [self bind];
+    [self oneWayBind];
 }
 
-- (void)bind {
+- (void)oneWayBind {
+    
+    // self.person.age被修改，self.ageLabel.text也会随着改变
+    RAC(self.ageLabel, text) = [RACObserve(self.person, age) map:^id _Nullable(NSNumber *value) {
+        return [value stringValue];
+    }];
+}
+
+- (void)twoWayBind {
     // 类型相同，直接等于就可以
     RACChannelTo(self.nameLabel,text) = RACChannelTo(self.person,name);
     
