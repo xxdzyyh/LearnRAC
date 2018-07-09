@@ -21,6 +21,11 @@
 		D4B2AF5220EF094A0055B501 /* SignalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF5120EF094A0055B501 /* SignalVC.m */; };
 		D4B2AF5520EF50570055B501 /* TimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF5420EF50570055B501 /* TimerVC.m */; };
 		D4B2AF5820EF54820055B501 /* SignalActionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF5720EF54820055B501 /* SignalActionVC.m */; };
+		D4B2AF5C20F2F7FE0055B501 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF5B20F2F7FE0055B501 /* Person.m */; };
+		D4B2AF6020F2F8620055B501 /* PersonInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF5E20F2F8620055B501 /* PersonInfoVC.m */; };
+		D4B2AF6120F2F8620055B501 /* PersonInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4B2AF5F20F2F8620055B501 /* PersonInfoVC.xib */; };
+		D4B2AF6520F2F87D0055B501 /* PersonInfoEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF6320F2F87D0055B501 /* PersonInfoEditVC.m */; };
+		D4B2AF6620F2F87D0055B501 /* PersonInfoEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4B2AF6420F2F87D0055B501 /* PersonInfoEditVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +56,14 @@
 		D4B2AF5420EF50570055B501 /* TimerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerVC.m; sourceTree = "<group>"; };
 		D4B2AF5620EF54820055B501 /* SignalActionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalActionVC.h; sourceTree = "<group>"; };
 		D4B2AF5720EF54820055B501 /* SignalActionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignalActionVC.m; sourceTree = "<group>"; };
+		D4B2AF5A20F2F7FE0055B501 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D4B2AF5B20F2F7FE0055B501 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		D4B2AF5D20F2F8620055B501 /* PersonInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonInfoVC.h; sourceTree = "<group>"; };
+		D4B2AF5E20F2F8620055B501 /* PersonInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonInfoVC.m; sourceTree = "<group>"; };
+		D4B2AF5F20F2F8620055B501 /* PersonInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonInfoVC.xib; sourceTree = "<group>"; };
+		D4B2AF6220F2F87D0055B501 /* PersonInfoEditVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonInfoEditVC.h; sourceTree = "<group>"; };
+		D4B2AF6320F2F87D0055B501 /* PersonInfoEditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonInfoEditVC.m; sourceTree = "<group>"; };
+		D4B2AF6420F2F87D0055B501 /* PersonInfoEditVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonInfoEditVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +134,7 @@
 		D4B2AF4620EDFECA0055B501 /* RAC */ = {
 			isa = PBXGroup;
 			children = (
+				D4B2AF5920F2F7D20055B501 /* DataBind */,
 				D4B2AF4720EDFEE60055B501 /* KVOVC.h */,
 				D4B2AF4820EDFEE60055B501 /* KVOVC.m */,
 				D4B2AF4A20EE15FC0055B501 /* DelegateVC.h */,
@@ -135,6 +149,21 @@
 				D4B2AF5720EF54820055B501 /* SignalActionVC.m */,
 			);
 			path = RAC;
+			sourceTree = "<group>";
+		};
+		D4B2AF5920F2F7D20055B501 /* DataBind */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2AF5A20F2F7FE0055B501 /* Person.h */,
+				D4B2AF5B20F2F7FE0055B501 /* Person.m */,
+				D4B2AF5D20F2F8620055B501 /* PersonInfoVC.h */,
+				D4B2AF5E20F2F8620055B501 /* PersonInfoVC.m */,
+				D4B2AF5F20F2F8620055B501 /* PersonInfoVC.xib */,
+				D4B2AF6220F2F87D0055B501 /* PersonInfoEditVC.h */,
+				D4B2AF6320F2F87D0055B501 /* PersonInfoEditVC.m */,
+				D4B2AF6420F2F87D0055B501 /* PersonInfoEditVC.xib */,
+			);
+			path = DataBind;
 			sourceTree = "<group>";
 		};
 		E15C9CA5C0CFFC58C06CC6BC /* Pods */ = {
@@ -204,7 +233,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B2AF6620F2F87D0055B501 /* PersonInfoEditVC.xib in Resources */,
 				D4B2AF3920EDFB2C0055B501 /* LaunchScreen.storyboard in Resources */,
+				D4B2AF6120F2F8620055B501 /* PersonInfoVC.xib in Resources */,
 				D4B2AF3620EDFB2C0055B501 /* Assets.xcassets in Resources */,
 				D4B2AF3420EDFB2A0055B501 /* Main.storyboard in Resources */,
 			);
@@ -239,7 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4B2AF5820EF54820055B501 /* SignalActionVC.m in Sources */,
+				D4B2AF6520F2F87D0055B501 /* PersonInfoEditVC.m in Sources */,
+				D4B2AF6020F2F8620055B501 /* PersonInfoVC.m in Sources */,
 				D4B2AF4F20EE293A0055B501 /* EventVC.m in Sources */,
+				D4B2AF5C20F2F7FE0055B501 /* Person.m in Sources */,
 				D4B2AF3120EDFB2A0055B501 /* ViewController.m in Sources */,
 				D4B2AF4C20EE15FC0055B501 /* DelegateVC.m in Sources */,
 				D4B2AF3C20EDFB2C0055B501 /* main.m in Sources */,

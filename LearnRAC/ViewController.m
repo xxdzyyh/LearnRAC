@@ -23,7 +23,8 @@
                          @{ @"type" : @"UIViewController", @"className" : @"EventVC", @"desc" : @"rac实现事件监听"},
                          @{ @"type" : @"UIViewController", @"className" : @"SignalVC", @"desc" : @"rac信号"},
                          @{ @"type" : @"UIViewController", @"className" : @"TimerVC", @"desc" : @"rac实现timer"},
-                         @{ @"type" : @"UIViewController", @"className" : @"SignalActionVC", @"desc" : @"信号操作"}];
+                         @{ @"type" : @"UIViewController", @"className" : @"SignalActionVC", @"desc" : @"信号操作"},
+                         @{ @"type" : @"UIViewController", @"className" : @"PersonInfoVC", @"desc" : @"双向绑定"}];
 }
 
 

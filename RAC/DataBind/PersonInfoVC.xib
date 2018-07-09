@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonInfoVC">
+            <connections>
+                <outlet property="ageLabel" destination="B9D-AD-Feo" id="EDj-YQ-Stk"/>
+                <outlet property="nameLabel" destination="Xcu-wE-i8B" id="TT3-dB-I0l"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0y-f2-3Pq">
+                    <rect key="frame" x="172" y="209" width="31" height="30"/>
+                    <state key="normal" title="编辑"/>
+                    <connections>
+                        <action selector="editPersonInfo:" destination="-1" eventType="touchUpInside" id="5Nh-10-Rea"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="姓名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fp-Kv-7RZ">
+                    <rect key="frame" x="36" y="84" width="52" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="年龄：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0Y-gV-Wb3">
+                    <rect key="frame" x="36" y="133" width="52" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcu-wE-i8B">
+                    <rect key="frame" x="86" y="84" width="117" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9D-AD-Feo">
+                    <rect key="frame" x="86" y="133" width="152" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1O-iM-Zhe">
+                    <rect key="frame" x="149" y="247" width="77" height="30"/>
+                    <state key="normal" title="随机个名字"/>
+                    <connections>
+                        <action selector="randomName:" destination="-1" eventType="touchUpInside" id="TCp-xa-Q89"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N12-Ku-EvQ">
+                    <rect key="frame" x="149" y="285" width="77" height="30"/>
+                    <state key="normal" title="随机个年龄"/>
+                    <connections>
+                        <action selector="randomAge:" destination="-1" eventType="touchUpInside" id="H98-kO-VTX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="N12-Ku-EvQ" firstAttribute="top" secondItem="Q1O-iM-Zhe" secondAttribute="bottom" constant="8" id="9yO-ef-32K"/>
+                <constraint firstItem="Q1O-iM-Zhe" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="DGD-gn-ysZ"/>
+                <constraint firstItem="F0y-f2-3Pq" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="189" id="F7c-zF-O5V"/>
+                <constraint firstItem="Q1O-iM-Zhe" firstAttribute="top" secondItem="F0y-f2-3Pq" secondAttribute="bottom" constant="8" id="bOf-Ds-a4C"/>
+                <constraint firstItem="N12-Ku-EvQ" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="wky-5Q-08X"/>
+                <constraint firstItem="F0y-f2-3Pq" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="yDg-lw-qbp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="42.5" y="39.5"/>
+        </view>
+    </objects>
+</document>
