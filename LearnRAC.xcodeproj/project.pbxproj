@@ -26,6 +26,7 @@
 		D4B2AF6120F2F8620055B501 /* PersonInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4B2AF5F20F2F8620055B501 /* PersonInfoVC.xib */; };
 		D4B2AF6520F2F87D0055B501 /* PersonInfoEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF6320F2F87D0055B501 /* PersonInfoEditVC.m */; };
 		D4B2AF6620F2F87D0055B501 /* PersonInfoEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4B2AF6420F2F87D0055B501 /* PersonInfoEditVC.xib */; };
+		D4B2AF6D20F45D2F0055B501 /* TestSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF6C20F45D2F0055B501 /* TestSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,8 @@
 		D4B2AF6220F2F87D0055B501 /* PersonInfoEditVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonInfoEditVC.h; sourceTree = "<group>"; };
 		D4B2AF6320F2F87D0055B501 /* PersonInfoEditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonInfoEditVC.m; sourceTree = "<group>"; };
 		D4B2AF6420F2F87D0055B501 /* PersonInfoEditVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonInfoEditVC.xib; sourceTree = "<group>"; };
+		D4B2AF6B20F45D2F0055B501 /* TestSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSwizzle.h; sourceTree = "<group>"; };
+		D4B2AF6C20F45D2F0055B501 /* TestSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSwizzle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,7 @@
 		D4B2AF4620EDFECA0055B501 /* RAC */ = {
 			isa = PBXGroup;
 			children = (
+				D4B2AF6A20F45CFC0055B501 /* Swizzle */,
 				D4B2AF5920F2F7D20055B501 /* DataBind */,
 				D4B2AF4720EDFEE60055B501 /* KVOVC.h */,
 				D4B2AF4820EDFEE60055B501 /* KVOVC.m */,
@@ -164,6 +168,15 @@
 				D4B2AF6420F2F87D0055B501 /* PersonInfoEditVC.xib */,
 			);
 			path = DataBind;
+			sourceTree = "<group>";
+		};
+		D4B2AF6A20F45CFC0055B501 /* Swizzle */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2AF6B20F45D2F0055B501 /* TestSwizzle.h */,
+				D4B2AF6C20F45D2F0055B501 /* TestSwizzle.m */,
+			);
+			path = Swizzle;
 			sourceTree = "<group>";
 		};
 		E15C9CA5C0CFFC58C06CC6BC /* Pods */ = {
@@ -281,6 +294,7 @@
 				D4B2AF4920EDFEE60055B501 /* KVOVC.m in Sources */,
 				D4B2AF5520EF50570055B501 /* TimerVC.m in Sources */,
 				D4B2AF2E20EDFB290055B501 /* AppDelegate.m in Sources */,
+				D4B2AF6D20F45D2F0055B501 /* TestSwizzle.m in Sources */,
 				D4B2AF4520EDFB9C0055B501 /* BaseTableViewVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,6 +6,12 @@
 //  Copyright © 2018年 com.learn. All rights reserved.
 //
 
+@protocol ProtocolTest
+
+- (void)test;
+
+@end
+
 #import "DelegateVC.h"
 #import <Masonry/Masonry.h>
 #import <ReactiveObjC/ReactiveObjC.h>
@@ -31,11 +37,11 @@
         make.edges.equalTo(self.view);
     }];
     
-    [[self rac_signalForSelector:@selector(tableView:didSelectRowAtIndexPath:) fromProtocol:@protocol(UITableViewDelegate)] subscribeNext:^(RACTuple * _Nullable x) {
-        NSLog(@"xx %@",x);
-    }];
-    
     self.tableView.delegate = self;
+    
+    [[self rac_signalForSelector:@selector(test) fromProtocol:@protocol(ProtocolTest)] subscribeNext:^(RACTuple * _Nullable x) {
+        NSLog(@"ProtocolTest test");
+    }];
 }
 
 - (void)setDataSources:(NSArray *)dataSources {
@@ -70,35 +76,9 @@
     return self.dataSources.count;
 }
 
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    NSDictionary *dict = self.dataSources[indexPath.row];
-//    
-//    NSString *type = dict[@"type"];
-//    NSString *className = dict[@"className"];
-//    
-//    if ([type isEqualToString:@"UIViewController"]) {
-//        
-//        UIViewController *vc = [NSClassFromString(className) new];
-//        
-//        [self.navigationController pushViewController:vc animated:YES];
-//    } else if ([type isEqualToString:@"UIView"]) {
-//        
-//        UIView *view = [NSClassFromString(className) new];
-//        
-//        UIViewController *vc = [UIViewController new];
-//        
-//        view.backgroundColor = [UIColor colorWithWhite:0.4 alpha:1];
-//        
-//        [vc.view addSubview:view];
-//        
-//        [view mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.center.mas_equalTo(view);
-//        }];
-//        
-//    } else {
-//        
-//    }
-//}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSelector:@selector(test)];
+}
 
 - (UITableView *)tableView {
     if (_tableView == nil) {

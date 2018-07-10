@@ -24,14 +24,24 @@
                          @{ @"type" : @"UIViewController", @"className" : @"SignalVC", @"desc" : @"rac信号"},
                          @{ @"type" : @"UIViewController", @"className" : @"TimerVC", @"desc" : @"rac实现timer"},
                          @{ @"type" : @"UIViewController", @"className" : @"SignalActionVC", @"desc" : @"信号操作"},
-                         @{ @"type" : @"UIViewController", @"className" : @"PersonInfoVC", @"desc" : @"数据绑定"}];
+                         @{ @"type" : @"UIViewController", @"className" : @"PersonInfoVC", @"desc" : @"数据绑定"},
+                         @{ @"type" : @"UIViewController", @"className" : @"TestSwizzle", @"desc" : @"数据绑定"}
+                         ];
+    
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary *dict = self.dataSources[indexPath.row];
+    
+    NSString *desc = dict[@"desc"];
+    NSString *className = dict[@"className"];
+    
+    if ([className isEqualToString:@"TestSwizzle"]) {
+        [NSClassFromString(className) new];
+    } else {
+        [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    }
 }
-
 
 @end

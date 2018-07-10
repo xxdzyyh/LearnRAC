@@ -18,7 +18,7 @@
     }
  ]
  */
-@interface BaseTableViewVC : UIViewController
+@interface BaseTableViewVC : UIViewController <UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) NSArray *dataSources;
