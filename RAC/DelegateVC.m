@@ -15,6 +15,7 @@
 #import "DelegateVC.h"
 #import <Masonry/Masonry.h>
 #import <ReactiveObjC/ReactiveObjC.h>
+#import <objc/runtime.h>
 
 @interface DelegateVC () <UITableViewDataSource,UITableViewDelegate>
 
@@ -39,9 +40,34 @@
     
     self.tableView.delegate = self;
     
-    [[self rac_signalForSelector:@selector(test) fromProtocol:@protocol(ProtocolTest)] subscribeNext:^(RACTuple * _Nullable x) {
+    BOOL useRAC = NO;
+    
+    // 就这个情景而言，useRAC=YES和useRAC=NO效果相同
+    if (useRAC) {
+        [[self rac_signalForSelector:@selector(test) fromProtocol:@protocol(ProtocolTest)] subscribeNext:^(RACTuple * _Nullable x) {
+            NSLog(@"ProtocolTest test");
+        }];
+    } else {
+        [self addTestMethod];
+    }
+}
+
+- (void)addTestMethod {
+    SEL selector = @selector(test);
+    
+    Method method = class_getInstanceMethod(self.class, selector);
+    
+    IMP imp = imp_implementationWithBlock(^{
         NSLog(@"ProtocolTest test");
-    }];
+    });
+    
+    BOOL addMethodResult = class_addMethod(self.class, selector, imp, method_getTypeEncoding(method));
+    
+    if (addMethodResult == YES) {
+        NSLog(@"add method success");
+    } else {
+        NSLog(@"add method failure");
+    }
 }
 
 - (void)setDataSources:(NSArray *)dataSources {
