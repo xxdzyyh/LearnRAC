@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseTableViewVC.h"
 
-@interface SignalActionVC : UIViewController
+@interface SignalActionVC : BaseTableViewVC
 
 @end
