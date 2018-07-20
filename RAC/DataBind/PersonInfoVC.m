@@ -33,10 +33,37 @@
 
 - (void)oneWayBind {
     
-    // self.person.age被修改，self.ageLabel.text也会随着改变
-    RAC(self.ageLabel, text) = [RACObserve(self.person, age) map:^id _Nullable(NSNumber *value) {
-        return [value stringValue];
-    }];
+    NSUInteger type = 0;
+    
+    // 单向绑定 self.person.age被修改，self.ageLabel.text也会随着改变
+    // 为了方便使用，提供了两个宏RAC、RACObserve，一般使用宏就可以，但是也要取了解这些宏到底干了什么
+    switch (type) {
+        case 0: {
+            RAC(self.ageLabel, text) = [RACObserve(self.person, age) map:^id _Nullable(NSNumber *value) {
+                return [value stringValue];
+            }];
+        }
+            break;
+        case 1: {
+            RAC(self.ageLabel, text) = [[self.person rac_valuesForKeyPath:@"age" observer:self] map:^id _Nullable(NSNumber *value) {
+                return [value stringValue];
+            }];
+        }
+            break;
+        case 2: {
+            RACSignal *signal =  [RACObserve(self.person, age) map:^id _Nullable(NSNumber *value) {
+                return [value stringValue];
+            }];
+            
+            /**
+             * 宏RAC的等价写法
+             */
+            [signal setKeyPath:@"text" onObject:self.ageLabel nilValue:nil];
+        }
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)twoWayBind {

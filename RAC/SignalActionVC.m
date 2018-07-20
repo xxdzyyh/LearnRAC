@@ -23,6 +23,7 @@
     self.dataSources = @[@{ @"type" : @"Method", @"className" : @"map", @"desc" : @"map"},
                          @{ @"type" : @"Method", @"className" : @"zip", @"desc" : @"zip"},
                          @{ @"type" : @"Method", @"className" : @"concat", @"desc" : @"concat"},
+                         @{ @"type" : @"Method", @"className" : @"takeUntil", @"desc" : @"takeUntil"},
                          ];
     
 }
@@ -147,11 +148,30 @@
     }];
 }
 
-- (void)not {
-    // not: 取反
-    [RACObserve(self.view, hidden).not subscribeNext:^(NSNumber * _Nullable x) {
-        NSLog(@"not x = %@", x);
-    }];
-}
+- (void)takeUntil {
 
+    RACSubject *subjectA = [RACSubject subject];
+    RACSubject *subjectB = [RACSubject subject];
+    
+    /**
+     * takeUntilSignal = [signalA takeUntil:signalB] signalB触发时dispose signalA和takeUntilSignal
+     * 实际可以理解为设置了信号生存周期。
+     * 在某些情况下，比如cell重用时，可能重复创建
+     * RAC(cell.textLabel, text) = RACObserver(model, title)
+     * 每次重用的时候，都添加了一个信号，这样不是很好，在重用前dispose掉之前的信号，保证每次只有一个信号
+     * RAC(cell.textLabel, text) = [RACObserve(model, title) takeUntil:cell.rac_prepareForReuseSignal];
+     */
+    RACSignal *takeUntilSignal = [subjectA takeUntil:subjectB];
+    
+    [takeUntilSignal subscribeNext:^(id  _Nullable x) {
+        NSLog(@"takeUntilSignal subscribeNext %@",x);
+    }];
+    
+    [subjectA sendNext:@"aaa"];
+    [subjectA sendNext:@"bbb"];
+    [subjectB sendNext:@(1)];
+    [subjectA sendNext:@"ccc"];
+    [subjectB sendNext:@(2)];
+    [subjectA sendNext:@"ddd"];
+}
 @end

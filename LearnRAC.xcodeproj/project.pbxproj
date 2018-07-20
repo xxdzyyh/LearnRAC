@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		073C704A11481AADC088F49B /* libPods-LearnRAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E00D710558B86AB287383F /* libPods-LearnRAC.a */; };
+		D4361C70210024960080146B /* RACCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4361C6F210024960080146B /* RACCellVC.m */; };
 		D4B2AF2E20EDFB290055B501 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF2D20EDFB290055B501 /* AppDelegate.m */; };
 		D4B2AF3120EDFB2A0055B501 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF3020EDFB2A0055B501 /* ViewController.m */; };
 		D4B2AF3420EDFB2A0055B501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B2AF3220EDFB2A0055B501 /* Main.storyboard */; };
@@ -33,6 +34,8 @@
 		21262561EA576CF54B609D88 /* Pods-LearnRAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRAC.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRAC/Pods-LearnRAC.release.xcconfig"; sourceTree = "<group>"; };
 		31E00D710558B86AB287383F /* libPods-LearnRAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearnRAC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		937910A95003093F4F7BABAA /* Pods-LearnRAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRAC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRAC/Pods-LearnRAC.debug.xcconfig"; sourceTree = "<group>"; };
+		D4361C6E210024960080146B /* RACCellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACCellVC.h; sourceTree = "<group>"; };
+		D4361C6F210024960080146B /* RACCellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACCellVC.m; sourceTree = "<group>"; };
 		D4B2AF2920EDFB290055B501 /* LearnRAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B2AF2C20EDFB290055B501 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4B2AF2D20EDFB290055B501 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +92,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D4361C6D2100243C0080146B /* Attention */ = {
+			isa = PBXGroup;
+			children = (
+				D4361C6E210024960080146B /* RACCellVC.h */,
+				D4361C6F210024960080146B /* RACCellVC.m */,
+			);
+			path = Attention;
+			sourceTree = "<group>";
+		};
 		D4B2AF2020EDFB290055B501 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +149,7 @@
 		D4B2AF4620EDFECA0055B501 /* RAC */ = {
 			isa = PBXGroup;
 			children = (
+				D4361C6D2100243C0080146B /* Attention */,
 				D4B2AF6A20F45CFC0055B501 /* Swizzle */,
 				D4B2AF5920F2F7D20055B501 /* DataBind */,
 				D4B2AF4720EDFEE60055B501 /* KVOVC.h */,
@@ -291,6 +304,7 @@
 				D4B2AF4C20EE15FC0055B501 /* DelegateVC.m in Sources */,
 				D4B2AF3C20EDFB2C0055B501 /* main.m in Sources */,
 				D4B2AF5220EF094A0055B501 /* SignalVC.m in Sources */,
+				D4361C70210024960080146B /* RACCellVC.m in Sources */,
 				D4B2AF4920EDFEE60055B501 /* KVOVC.m in Sources */,
 				D4B2AF5520EF50570055B501 /* TimerVC.m in Sources */,
 				D4B2AF2E20EDFB290055B501 /* AppDelegate.m in Sources */,
