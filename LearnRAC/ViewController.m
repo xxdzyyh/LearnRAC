@@ -18,7 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.dataSources = @[@{ @"type" : @"UIViewController", @"className" : @"KVOVC", @"desc" : @"rac实现kvo"},
+    self.dataSources = @[@{ @"type" : @"UIViewController", @"className" : @"InstantViewController", @"desc" : @"RAC学习第一步"},
+                         @{ @"type" : @"UIViewController", @"className" : @"KVOVC", @"desc" : @"rac实现kvo"},
                          @{ @"type" : @"UIViewController", @"className" : @"DelegateVC", @"desc" : @"rac实现deleagte"},
                          @{ @"type" : @"UIViewController", @"className" : @"EventVC", @"desc" : @"rac实现事件监听"},
                          @{ @"type" : @"UIViewController", @"className" : @"SignalVC", @"desc" : @"rac信号"},
@@ -33,8 +34,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *dict = self.dataSources[indexPath.row];
-    
-    NSString *desc = dict[@"desc"];
+
     NSString *className = dict[@"className"];
     
     if ([className isEqualToString:@"TestSwizzle"]) {

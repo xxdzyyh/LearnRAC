@@ -32,8 +32,9 @@
 }
 
 - (void)oneWayBind {
-    
     NSUInteger type = 0;
+    
+    RAC(self.nameLabel,text) = RACObserve(self.person, name);
     
     // 单向绑定 self.person.age被修改，self.ageLabel.text也会随着改变
     // 为了方便使用，提供了两个宏RAC、RACObserve，一般使用宏就可以，但是也要取了解这些宏到底干了什么
@@ -93,7 +94,7 @@
 }
 
 - (IBAction)randomName:(id)sender {
-
+    ////
     NSArray *array = @[@"北方的风",@"喵喵喵"];
     
     self.nameLabel.text = [array objectAtIndex:arc4random()%2];

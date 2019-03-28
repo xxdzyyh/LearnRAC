@@ -45,7 +45,7 @@
     }
     
     /**
-     * 默认信号会在dealloc的时候dispose
+     * 默认信号会在dealloc的时候dispose,cell 会被重用，如果不先dispose原有的bind signal，就会出问题
      */
     RAC(cell.textLabel, text) = [RACObserve(model, title) takeUntil:cell.rac_prepareForReuseSignal];
     

@@ -25,7 +25,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-        
         [subscriber sendNext:@(arc4random())];
         
         return [RACDisposable disposableWithBlock:^{
@@ -33,7 +32,7 @@
         }];
     }];
         
-    [[signal takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
+    [signal subscribeNext:^(id  _Nullable x) {
         NSLog(@"x1 : %@",x);
     }];
     
