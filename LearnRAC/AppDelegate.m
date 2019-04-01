@@ -18,25 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    dispatch_queue_t serial = dispatch_queue_create("my.serial.queue", DISPATCH_QUEUE_SERIAL);
-    
-    dispatch_async(serial, ^{
-        NSLog(@"1. thread %@",[NSThread currentThread]);
-   
-        __block NSString *https = @"";
-        
-        dispatch_semaphore_t signal = dispatch_semaphore_create(0);
-    
-        dispatch_async(dispatch_get_main_queue(), ^{
-            https = [AppDelegate httpParamas];
-            NSLog(@"2. thread %@",[NSThread currentThread]);
-            dispatch_semaphore_signal(signal);
-        });
-         dispatch_semaphore_wait(signal, 1.0f * NSEC_PER_SEC);
-        
-        NSLog(@"3. thread %@",[NSThread currentThread]);
-    });
-    
+    [[UIView appearance] setBackgroundColor:[UIColor whiteColor]];
     
     return YES;
 }

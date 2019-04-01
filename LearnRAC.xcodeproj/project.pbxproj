@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		073C704A11481AADC088F49B /* libPods-LearnRAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E00D710558B86AB287383F /* libPods-LearnRAC.a */; };
+		D40DE7A5224DF254007ADE19 /* ArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D40DE7A4224DF254007ADE19 /* ArrayVC.m */; };
+		D40DE7A82251A325007ADE19 /* SelectorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D40DE7A72251A325007ADE19 /* SelectorVC.m */; };
+		D40DE7AB2251B1DC007ADE19 /* SubjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D40DE7AA2251B1DC007ADE19 /* SubjectVC.m */; };
+		D40DE7AF2251B6A1007ADE19 /* SencondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D40DE7AE2251B6A1007ADE19 /* SencondVC.m */; };
 		D4361C70210024960080146B /* RACCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4361C6F210024960080146B /* RACCellVC.m */; };
 		D4B2AF2E20EDFB290055B501 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF2D20EDFB290055B501 /* AppDelegate.m */; };
 		D4B2AF3120EDFB2A0055B501 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF3020EDFB2A0055B501 /* ViewController.m */; };
@@ -37,6 +41,14 @@
 		21262561EA576CF54B609D88 /* Pods-LearnRAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRAC.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRAC/Pods-LearnRAC.release.xcconfig"; sourceTree = "<group>"; };
 		31E00D710558B86AB287383F /* libPods-LearnRAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearnRAC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		937910A95003093F4F7BABAA /* Pods-LearnRAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRAC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRAC/Pods-LearnRAC.debug.xcconfig"; sourceTree = "<group>"; };
+		D40DE7A3224DF254007ADE19 /* ArrayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayVC.h; sourceTree = "<group>"; };
+		D40DE7A4224DF254007ADE19 /* ArrayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayVC.m; sourceTree = "<group>"; };
+		D40DE7A62251A325007ADE19 /* SelectorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectorVC.h; sourceTree = "<group>"; };
+		D40DE7A72251A325007ADE19 /* SelectorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectorVC.m; sourceTree = "<group>"; };
+		D40DE7A92251B1DC007ADE19 /* SubjectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubjectVC.h; sourceTree = "<group>"; };
+		D40DE7AA2251B1DC007ADE19 /* SubjectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubjectVC.m; sourceTree = "<group>"; };
+		D40DE7AD2251B6A1007ADE19 /* SencondVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SencondVC.h; sourceTree = "<group>"; };
+		D40DE7AE2251B6A1007ADE19 /* SencondVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SencondVC.m; sourceTree = "<group>"; };
 		D4361C6E210024960080146B /* RACCellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACCellVC.h; sourceTree = "<group>"; };
 		D4361C6F210024960080146B /* RACCellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACCellVC.m; sourceTree = "<group>"; };
 		D4B2AF2920EDFB290055B501 /* LearnRAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +112,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D40DE7AC2251B67D007ADE19 /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				D40DE7AD2251B6A1007ADE19 /* SencondVC.h */,
+				D40DE7AE2251B6A1007ADE19 /* SencondVC.m */,
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
+		D40DE7B02251F8F5007ADE19 /* Sequence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sequence;
+			sourceTree = "<group>";
+		};
 		D4361C6D2100243C0080146B /* Attention */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +185,8 @@
 		D4B2AF4620EDFECA0055B501 /* RAC */ = {
 			isa = PBXGroup;
 			children = (
+				D40DE7B02251F8F5007ADE19 /* Sequence */,
+				D40DE7AC2251B67D007ADE19 /* Subject */,
 				D4361C6D2100243C0080146B /* Attention */,
 				D4B2AF6A20F45CFC0055B501 /* Swizzle */,
 				D4B2AF5920F2F7D20055B501 /* DataBind */,
@@ -177,6 +207,12 @@
 				D4C45750221FA81200AA17A6 /* InstantViewController.h */,
 				D4C45751221FA81200AA17A6 /* InstantViewController.m */,
 				D4C45752221FA81200AA17A6 /* InstantViewController.xib */,
+				D40DE7A3224DF254007ADE19 /* ArrayVC.h */,
+				D40DE7A4224DF254007ADE19 /* ArrayVC.m */,
+				D40DE7A62251A325007ADE19 /* SelectorVC.h */,
+				D40DE7A72251A325007ADE19 /* SelectorVC.m */,
+				D40DE7A92251B1DC007ADE19 /* SubjectVC.h */,
+				D40DE7AA2251B1DC007ADE19 /* SubjectVC.m */,
 			);
 			path = RAC;
 			sourceTree = "<group>";
@@ -311,7 +347,10 @@
 			files = (
 				D4B2AF5820EF54820055B501 /* SignalActionVC.m in Sources */,
 				D4B2AF6520F2F87D0055B501 /* PersonInfoEditVC.m in Sources */,
+				D40DE7A5224DF254007ADE19 /* ArrayVC.m in Sources */,
+				D40DE7AB2251B1DC007ADE19 /* SubjectVC.m in Sources */,
 				D4B2AF6020F2F8620055B501 /* PersonInfoVC.m in Sources */,
+				D40DE7A82251A325007ADE19 /* SelectorVC.m in Sources */,
 				D4B2AF4F20EE293A0055B501 /* EventVC.m in Sources */,
 				D4B2AF5C20F2F7FE0055B501 /* Person.m in Sources */,
 				D4B2AF3120EDFB2A0055B501 /* ViewController.m in Sources */,
@@ -320,6 +359,7 @@
 				D4B2AF5220EF094A0055B501 /* SignalVC.m in Sources */,
 				D4361C70210024960080146B /* RACCellVC.m in Sources */,
 				D4B2AF4920EDFEE60055B501 /* KVOVC.m in Sources */,
+				D40DE7AF2251B6A1007ADE19 /* SencondVC.m in Sources */,
 				D4B2AF5520EF50570055B501 /* TimerVC.m in Sources */,
 				D4B2AF2E20EDFB290055B501 /* AppDelegate.m in Sources */,
 				D4B2AF6D20F45D2F0055B501 /* TestSwizzle.m in Sources */,

@@ -30,6 +30,7 @@
                          @{ @"type" : @"Method", @"className" : @"flatten", @"desc" : @"flatten"},
                          @{ @"type" : @"Method", @"className" : @"merge", @"desc" : @"merge"},
                          @{ @"type" : @"Method", @"className" : @"combineLatest", @"desc" : @"combineLatest"},
+                         @{ @"type" : @"Method", @"className" : @"reduceApply", @"desc" : @"reduceApply"},
                          ];
     
 }
@@ -266,6 +267,28 @@
     [[[self signalA] combineLatestWith:[self signalB]] subscribeNext:^(id  _Nullable x) {
         NSLog(@"combineLatest x=%@",x);
     }];
+}
+
+- (void)reduce {
+//    [[self signalA] combineLatestWith:[self signalB]] 
+}
+
+- (void)reduceApply {
+    [[[[self signalA] combineLatestWith:[self signalB]] reduceApply] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"reduceApply x=%@",x);
+    }];
+}
+
+- (void)replay {
+    
+}
+
+- (void)ignore {
+    
+}
+
+- (void)then {
+    
 }
 
 #pragma mark - 

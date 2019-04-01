@@ -21,6 +21,8 @@
     self.dataSources = @[@{ @"type" : @"UIViewController", @"className" : @"InstantViewController", @"desc" : @"RAC学习第一步"},
                          @{ @"type" : @"UIViewController", @"className" : @"KVOVC", @"desc" : @"rac实现kvo"},
                          @{ @"type" : @"UIViewController", @"className" : @"DelegateVC", @"desc" : @"rac实现deleagte"},
+                         @{ @"type" : @"UIViewController", @"className" : @"SelectorVC", @"desc" : @"rac监听方法执行"},
+                         @{ @"type" : @"UIViewController", @"className" : @"SubjectVC", @"desc" : @"RACSubject"},
                          @{ @"type" : @"UIViewController", @"className" : @"EventVC", @"desc" : @"rac实现事件监听"},
                          @{ @"type" : @"UIViewController", @"className" : @"SignalVC", @"desc" : @"rac信号"},
                          @{ @"type" : @"UIViewController", @"className" : @"TimerVC", @"desc" : @"rac实现timer"},
