@@ -28,7 +28,8 @@
                          @{ @"type" : @"UIViewController", @"className" : @"TimerVC", @"desc" : @"rac实现timer"},
                          @{ @"type" : @"UIViewController", @"className" : @"SignalActionVC", @"desc" : @"信号操作"},
                          @{ @"type" : @"UIViewController", @"className" : @"PersonInfoVC", @"desc" : @"数据绑定"},
-                         @{ @"type" : @"UIViewController", @"className" : @"TestSwizzle", @"desc" : @"数据绑定"}
+                         @{ @"type" : @"UIViewController", @"className" : @"TestSwizzle", @"desc" : @"数据绑定"},
+                         @{ @"type" : @"UIViewController", @"className" : @"CommandVC", @"desc" : @"RACCommand"}
                          ];
     
     

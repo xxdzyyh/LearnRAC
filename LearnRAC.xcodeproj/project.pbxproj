@@ -12,6 +12,7 @@
 		D40DE7A82251A325007ADE19 /* SelectorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D40DE7A72251A325007ADE19 /* SelectorVC.m */; };
 		D40DE7AB2251B1DC007ADE19 /* SubjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D40DE7AA2251B1DC007ADE19 /* SubjectVC.m */; };
 		D40DE7AF2251B6A1007ADE19 /* SencondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D40DE7AE2251B6A1007ADE19 /* SencondVC.m */; };
+		D40DE7B7225493E1007ADE19 /* CommandVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D40DE7B6225493E1007ADE19 /* CommandVC.m */; };
 		D4361C70210024960080146B /* RACCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4361C6F210024960080146B /* RACCellVC.m */; };
 		D4B2AF2E20EDFB290055B501 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF2D20EDFB290055B501 /* AppDelegate.m */; };
 		D4B2AF3120EDFB2A0055B501 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2AF3020EDFB2A0055B501 /* ViewController.m */; };
@@ -49,6 +50,8 @@
 		D40DE7AA2251B1DC007ADE19 /* SubjectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubjectVC.m; sourceTree = "<group>"; };
 		D40DE7AD2251B6A1007ADE19 /* SencondVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SencondVC.h; sourceTree = "<group>"; };
 		D40DE7AE2251B6A1007ADE19 /* SencondVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SencondVC.m; sourceTree = "<group>"; };
+		D40DE7B5225493E1007ADE19 /* CommandVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandVC.h; sourceTree = "<group>"; };
+		D40DE7B6225493E1007ADE19 /* CommandVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandVC.m; sourceTree = "<group>"; };
 		D4361C6E210024960080146B /* RACCellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACCellVC.h; sourceTree = "<group>"; };
 		D4361C6F210024960080146B /* RACCellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACCellVC.m; sourceTree = "<group>"; };
 		D4B2AF2920EDFB290055B501 /* LearnRAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +131,15 @@
 			path = Sequence;
 			sourceTree = "<group>";
 		};
+		D40DE7B4225493C0007ADE19 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				D40DE7B5225493E1007ADE19 /* CommandVC.h */,
+				D40DE7B6225493E1007ADE19 /* CommandVC.m */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
 		D4361C6D2100243C0080146B /* Attention */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,11 +197,12 @@
 		D4B2AF4620EDFECA0055B501 /* RAC */ = {
 			isa = PBXGroup;
 			children = (
+				D4B2AF5920F2F7D20055B501 /* DataBind */,
+				D40DE7B4225493C0007ADE19 /* Command */,
 				D40DE7B02251F8F5007ADE19 /* Sequence */,
 				D40DE7AC2251B67D007ADE19 /* Subject */,
 				D4361C6D2100243C0080146B /* Attention */,
 				D4B2AF6A20F45CFC0055B501 /* Swizzle */,
-				D4B2AF5920F2F7D20055B501 /* DataBind */,
 				D4B2AF4720EDFEE60055B501 /* KVOVC.h */,
 				D4B2AF4820EDFEE60055B501 /* KVOVC.m */,
 				D4B2AF4A20EE15FC0055B501 /* DelegateVC.h */,
@@ -345,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D40DE7B7225493E1007ADE19 /* CommandVC.m in Sources */,
 				D4B2AF5820EF54820055B501 /* SignalActionVC.m in Sources */,
 				D4B2AF6520F2F87D0055B501 /* PersonInfoEditVC.m in Sources */,
 				D40DE7A5224DF254007ADE19 /* ArrayVC.m in Sources */,
