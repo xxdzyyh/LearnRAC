@@ -6,16 +6,18 @@
 //  Copyright © 2018年 com.learn. All rights reserved.
 //
 
-@protocol ProtocolTest
-
-- (void)test;
-
-@end
 
 #import "DelegateVC.h"
 #import <Masonry/Masonry.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 #import <objc/runtime.h>
+
+
+@protocol ProtocolTest<NSObject>
+
+- (BOOL)test;
+
+@end
 
 @interface DelegateVC () <UITableViewDataSource,UITableViewDelegate>
 
@@ -40,16 +42,16 @@
     
     self.tableView.delegate = self;
     
-    BOOL useRAC = NO;
+    BOOL useRAC = YES;
     
-    // 就这个情景而言，useRAC=YES和useRAC=NO效果相同
+//     就这个情景而言，useRAC=YES和useRAC=NO效果相同
     if (useRAC) {
         [[self rac_signalForSelector:@selector(test) fromProtocol:@protocol(ProtocolTest)] subscribeNext:^(RACTuple * _Nullable x) {
-            NSLog(@"ProtocolTest test");
+            NSLog(@"%@",x);
         }];
     } else {
         [self addTestMethod];
-    }
+    }    
 }
 
 - (void)addTestMethod {
